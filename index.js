@@ -9,17 +9,17 @@ const root = document.getElementById("root");
 
 const circleElement = Circle(getRandomColor());
 circleElement.addEventListener("click", () => {
-  circleElement.style.backgroundColor = "#ccc";
+  circleElement.style.backgroundColor = getRandomColor();
 });
 
 const squareElement = Square(getRandomColor());
 squareElement.addEventListener("click", () => {
-  squareElement.style.backgroundColor = "#ccc";
+  squareElement.style.backgroundColor = getRandomColor();
 });
 
 const pentagonElement = Pentagon(getRandomColor());
 pentagonElement.addEventListener("click", () => {
-  pentagonElement.style.backgroundColor = "#ccc";
+  pentagonElement.style.backgroundColor = getRandomColor();
 });
 
 root.append(circleElement, squareElement, pentagonElement);
